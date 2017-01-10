@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        style="@style/linearStyle">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pesquisar ..."
+            android:inputType="textCapWords"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgMaisT"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maistocadas" />
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgMaisT"
+                android:layout_alignLeft="@id/imgMaisT"
+                android:layout_alignRight="@id/imgMaisT"
+                android:layout_alignTop="@id/imgMaisT"
+                android:layout_margin="1dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="Tocadas"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/myImageViewText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgMaisT"
+                android:layout_alignLeft="@id/imgMaisT"
+                android:layout_alignRight="@id/imgMaisT"
+                android:layout_alignTop="@id/imgMaisT"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="40dp"
+                android:text="Recentemente"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/imgMaisT2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/imgMaisT"
+                android:scaleType="centerCrop"
+                android:src="@drawable/recomendadas" />
+
+            <TextView
+                android:id="@+id/myImageViewText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgMaisT2"
+                android:layout_alignLeft="@id/imgMaisT2"
+                android:layout_alignRight="@id/imgMaisT2"
+                android:layout_alignTop="@id/imgMaisT2"
+                android:layout_margin="1dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="Recomendadas"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:id="@+id/imgMaisT3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/imgMaisT2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rock" />
+
+            <TextView
+                android:id="@+id/myImageViewText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imgMaisT3"
+                android:layout_alignLeft="@id/imgMaisT3"
+                android:layout_alignRight="@id/imgMaisT3"
+                android:layout_alignTop="@id/imgMaisT3"
+                android:layout_margin="1dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="Top Rock 2016"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
