@@ -17,7 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecentPlayActivity" android:label="Tocadas Recentemente"></activity>
+        <activity
+            android:name=".RecentPlayActivity"
+            android:label="Tocadas Recentemente" android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".RecommendActivity" android:label="Recomendadas" android:configChanges="orientation|screenSize|keyboardHidden"></activity>
     </application>
 
 </manifest>

@@ -13,14 +13,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView colors = (TextView) findViewById(R.id.myImageViewText);
+        TextView textMostPlayed = (TextView) findViewById(R.id.textView01);
+        TextView textRecommend  = (TextView) findViewById(R.id.textView02);
 
-        colors.setOnClickListener(new View.OnClickListener(){
+        textMostPlayed.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
 
-                Intent colorsIntent = new Intent(MainActivity.this, RecentPlayActivity.class);
-                startActivity(colorsIntent);
+                Intent mPlayedIntent = new Intent(MainActivity.this, RecentPlayActivity.class);
+                startActivity(mPlayedIntent);
+            }
+        });
+
+        textRecommend.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent RecomIntent = new Intent(MainActivity.this, RecommendActivity.class);
+                startActivity(RecomIntent);
             }
         });
     }

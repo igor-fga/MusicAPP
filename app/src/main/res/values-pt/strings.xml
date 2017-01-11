@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Pesquisar ...</string>
+    <string name="played">Tocadas</string>
+    <string name="mplayed">Mais Tocadas</string>
+    <string name="rock">Melhores Rock 2016</string>
+</resources>
