@@ -14,9 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView textMostPlayed = (TextView) findViewById(R.id.textView01);
-        TextView textRecommend  = (TextView) findViewById(R.id.textView02);
+        TextView textRecommend = (TextView) findViewById(R.id.textView02);
+        TextView textRock = (TextView) findViewById(R.id.textView03);
 
-        textMostPlayed.setOnClickListener(new View.OnClickListener(){
+        textMostPlayed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -25,12 +26,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        textRecommend.setOnClickListener(new View.OnClickListener(){
+        textRecommend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent RecomIntent = new Intent(MainActivity.this, RecommendActivity.class);
                 startActivity(RecomIntent);
+            }
+        });
+
+        textRock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent RockIntent = new Intent(MainActivity.this, RockActivity.class);
+                startActivity(RockIntent);
             }
         });
     }

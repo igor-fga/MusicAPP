@@ -19,8 +19,15 @@
         </activity>
         <activity
             android:name=".RecentPlayActivity"
-            android:label="Tocadas Recentemente" android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".RecommendActivity" android:label="Recomendadas" android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/mplayed" />
+        <activity
+            android:name=".RecommendActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/recomm" />
+        <activity android:name=".RockActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:label="@string/rock" />
     </application>
 
 </manifest>

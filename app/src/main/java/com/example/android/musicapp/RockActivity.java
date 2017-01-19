@@ -6,12 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class RecentPlayActivity extends AppCompatActivity {
+public class RockActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recent_play);
+        setContentView(R.layout.activity_rock);
 
         ImageButton imgBack = (ImageButton) findViewById(R.id.iconback);
 
@@ -19,7 +19,7 @@ public class RecentPlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent imgBackIntent = new Intent(RecentPlayActivity.this, MainActivity.class);
+                Intent imgBackIntent = new Intent(RockActivity.this, MainActivity.class);
                 startActivity(imgBackIntent);
             }
         });

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_recommend"
+    android:id="@+id/activity_rock"
     style="@style/FirstParent"
-    tools:context="com.example.android.musicapp.RecommendActivity">
+    tools:context="com.example.android.musicapp.RockActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0">
 
             <ImageButton
                 android:id="@+id/iconback"
@@ -27,31 +29,16 @@
 
         </RelativeLayout>
 
-        <LinearLayout style="@style/LinearAlbum">
 
-            <ImageView
-                android:id="@+id/imageView"
-                style="@style/ImageViewAlbum"
-                android:src="@drawable/linkinpark" />
+        <ImageView
+            android:id="@+id/rocknacional"
+            style="@style/ImageViewRockActivity"
+            android:src="@drawable/rocknacional" />
 
-            <ImageView
-                style="@style/ImageViewAlbum"
-                android:layout_width="wrap_content"
-                android:src="@drawable/imaginedragons" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/LinearAlbum">
-
-            <ImageView
-                style="@style/ImageViewAlbum"
-                android:src="@drawable/twodoors" />
-
-            <ImageView
-                style="@style/ImageViewAlbum"
-                android:src="@drawable/coutingcrows" />
-
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/rockinternacional"
+            style="@style/ImageViewRockActivity"
+            android:src="@drawable/rockinternacional" />
 
 
     </LinearLayout>

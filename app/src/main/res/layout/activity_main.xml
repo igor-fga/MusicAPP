@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/FirstParent"
     tools:context="com.example.android.musicapp.MainActivity">
 
     <LinearLayout
         android:id="@+id/activity_main"
-        style="@style/LinearStyleMain">
+        style="@style/LinearStyleMain"
+        android:focusableInTouchMode="true">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/search"
-            android:inputType="textCapWords"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp" />
+            android:id="@+id/searchMain"
+            style="@style/EditTextMainActivity" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,9 +26,9 @@
                 android:id="@+id/textView01"
                 style="@style/TextViewStyleMain"
                 android:layout_alignBottom="@id/imgPlayRecently"
-                android:layout_alignTop="@id/imgPlayRecently"
-                android:layout_alignRight="@id/imgPlayRecently"
                 android:layout_alignLeft="@id/imgPlayRecently"
+                android:layout_alignRight="@id/imgPlayRecently"
+                android:layout_alignTop="@id/imgPlayRecently"
                 android:text="@string/mplayed" />
 
             <ImageView
@@ -45,9 +41,9 @@
                 android:id="@+id/textView02"
                 style="@style/TextViewStyleMain"
                 android:layout_alignBottom="@id/imgRecommend"
-                android:layout_alignTop="@id/imgRecommend"
-                android:layout_alignRight="@id/imgRecommend"
                 android:layout_alignLeft="@id/imgRecommend"
+                android:layout_alignRight="@id/imgRecommend"
+                android:layout_alignTop="@id/imgRecommend"
                 android:text="@string/recomm" />
 
 
@@ -61,9 +57,9 @@
                 android:id="@+id/textView03"
                 style="@style/TextViewStyleMain"
                 android:layout_alignBottom="@id/imgTopRock"
-                android:layout_alignTop="@id/imgTopRock"
-                android:layout_alignRight="@id/imgTopRock"
                 android:layout_alignLeft="@id/imgTopRock"
+                android:layout_alignRight="@id/imgTopRock"
+                android:layout_alignTop="@id/imgTopRock"
                 android:text="@string/rock" />
 
         </RelativeLayout>
